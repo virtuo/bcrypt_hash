@@ -1,3 +1,9 @@
+The code in src (except for tests_data.h) is subject to one of the following 
+licenses, at your choice:
+ * New BSD License
+ * AGPL V3
+ * MIT License
+
 The src/tests_data.h file is subject to this license:
 
 /*
