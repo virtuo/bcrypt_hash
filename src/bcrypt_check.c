@@ -1,9 +1,7 @@
-#include <string.h>
-#include "bcrypt.h"
-
+#include "check.h"
 
 int main(int argc, char* argv[]) { 
-  char *hash, *hash2, *password;
+  char *hash, *password;
 
   if(argc != 3) {
     printf("Usage: %s <hash> <password>\n", argv[0]);
@@ -16,13 +14,7 @@ int main(int argc, char* argv[]) {
   hash = argv[1];
   password = argv[2];
 
-  hash2 = bcrypt(password, hash);
-  if(strcmp(hash, hash2) != 0) {
-    printf("%i\n", 0);
-  }
-  else {
-    printf("%i\n", 1);
-  }
+  printf("%i\n", check(password, hash));
   return 0;
 }
 
