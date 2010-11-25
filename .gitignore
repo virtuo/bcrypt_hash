@@ -1,3 +1,7 @@
 *.o
 CVS*
+bcrypt_check
+bcrypt_example
+bcrypt_hash
+tests
 
